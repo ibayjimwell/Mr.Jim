@@ -4,6 +4,9 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
+      <main>
+        
+      </main>
     </>
   );
 }

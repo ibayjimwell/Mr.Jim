@@ -6,6 +6,7 @@ function NavBar() {
         <nav className='
             container
             mx-auto 
+            px-4
             mt-10
         '>
 
