@@ -1,20 +1,24 @@
-import React from 'react'
-
 function NavBar() {
   return (
     <>
         <nav className='
-            container
-            mx-auto 
-            px-4
+
+            px-10
             mt-10
+
+            md:px-20
+
         '>
 
             <div className='
+
                 text-gray-50
-                text-4xl
+                text-2xl
                 font-bold
                 font-header
+
+                md:text-4xl
+
             '>Mr.Jim</div>
 
         </nav>
