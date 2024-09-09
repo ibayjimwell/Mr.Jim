@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar";
 import Intro from "./components/Intro";
+import Cards from "./components/Cards";
 
 function App() {
   return (
@@ -7,9 +8,8 @@ function App() {
       <NavBar></NavBar>
       <main className='mt-10'>
         <Intro></Intro>
-        <div className='p-40'>
-          
-        </div>
+        <div className='py-10 md:py-20'></div>
+        <Cards></Cards>
       </main>
     </>
   );
