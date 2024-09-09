@@ -6,15 +6,15 @@ function Intro() {
         <section id='intro'>
             <div className='
 
-                flex
-                flex-col
-                gap-2
-                px-5
+            flex
+            flex-col
+            gap-2
+            px-5
 
-                md:px-10
+            md:px-10
 
             '>
-                <div className='
+                <h1 className='
 
                 text-gray-50 
                 text-3xl
@@ -23,8 +23,8 @@ function Intro() {
 
                 md:text-5xl
                 
-                '>Jimwell Bustos Ibay</div>
-                <div className='
+                '>Jimwell Bustos Ibay</h1>
+                <p className='
 
                 text-gray-400
                 text-base
@@ -32,7 +32,7 @@ function Intro() {
 
                 md:text-xl
 
-                '>Aenean dolor ante, consequat ut convallis a, dapibus a neque. Nullam non enim non leo mattis aliquam.</div>
+                '>Aenean dolor ante, consequat ut convallis a, dapibus a neque. Nullam non enim non leo mattis aliquam.</p>
             </div>
             <div className='
 

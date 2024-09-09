@@ -5,10 +5,16 @@ function Cards() {
     <>
         <section className='
 
-        md:container
+        container 
+        mx-auto
 
         '>
-            <div className='grid grid-cols-3'>
+            <div className='
+            
+            grid 
+            grid-cols-3
+            
+            '>
                 
             </div>
         </section>

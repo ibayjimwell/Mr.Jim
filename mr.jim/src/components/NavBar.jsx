@@ -3,21 +3,21 @@ function NavBar() {
     <>
         <nav className='
 
-            px-10
-            mt-10
+        px-10
+        mt-10
 
-            md:px-20
+        md:px-20
 
         '>
 
             <div className='
 
-                text-gray-50
-                text-2xl
-                font-bold
-                font-header
+            text-gray-50
+            text-2xl
+            font-bold
+            font-header
 
-                md:text-4xl
+            md:text-4xl
 
             '>Mr.Jim</div>
 
