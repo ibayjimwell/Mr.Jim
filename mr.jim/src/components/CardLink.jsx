@@ -10,7 +10,6 @@ function CardLink({title, text, url}) {
         rounded-sm
 
         md:rounded-md
-        md:max-w-md
         
         '>
             <div className='
