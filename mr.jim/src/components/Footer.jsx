@@ -6,6 +6,8 @@ function Footer() {
         
         flex 
         items-center
+        justify-center
+        w-screen
         
         '>
           
