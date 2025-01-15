@@ -5,12 +5,12 @@ function CardLink({title, text, url}) {
         <article className='
         
         bg-gray-800
-        p-10
+        p-5
         max-w-sm
         rounded-sm
 
         md:rounded-md
-        md:max-w-md
+        md:p-8
         
         '>
             <div className='
