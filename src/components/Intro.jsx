@@ -32,7 +32,7 @@ function Intro() {
 
                 md:text-xl
 
-                '>Aenean dolor ante, consequat ut convallis a, dapibus a neque. Nullam non enim non leo mattis aliquam.</p>
+                '>A fullstack developer that can build web apps for your needs with the latest technologies and frameworks.</p>
             </div>
             <div className='
 
