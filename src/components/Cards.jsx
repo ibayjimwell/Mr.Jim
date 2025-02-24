@@ -19,7 +19,7 @@ function Cards() {
             '>
                 <CardLink 
 
-                url='https://removebg.up.railway.app/' 
+                url='https://backgroundremove.vercel.app/' 
                 title='Background Remover'
                 text='Easily remove backgrounds from your photos and images with our powerful and intuitive tool. Perfect for e-commerce, social media, and more!'
 

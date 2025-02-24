@@ -19,7 +19,7 @@ function NavBar() {
 
             md:text-4xl
 
-            '>Mr.Jim</div>
+            '>ibayjimwell</div>
 
         </nav>
     </>
