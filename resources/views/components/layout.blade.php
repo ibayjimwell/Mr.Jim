@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="{{ asset('images/jimwell.png') }}">
   <title>{{ $title }}</title>
 </head>
 <body class="bg-gray-100">
@@ -21,7 +22,7 @@
                     ibayjimwell
                 </h1>
             </a>
-            <a href="/" class="flex items-center pace-x-3 rtl:space-x-reverse">
+            <a href="https://github.com/ibayjimwell" class="flex items-center pace-x-3 rtl:space-x-reverse">
                 <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                 </svg>
@@ -29,9 +30,9 @@
         </div>
     </nav>
 
-    <div class="h-24"></div>
+    <div class="h-20"></div>
 
-    <div class="flex flex-col md:flex-row gap-10 justify-center mx-5 md:mx-0">
+    <div class="flex flex-col md:flex-row gap-4 justify-center mx-5">
         <article class="flex justify-center">
             <div class="p-10 bg-white border border-gray-200 rounded-lg shadow-sm">
                 <div class="flex flex-row gap-10">
@@ -53,7 +54,7 @@
                         </a>
                     </div>
                     <div>
-                        <img class="h-auto w-64" src="{{ asset('images/jimwell.png') }}" alt="Jimwell Ibay">
+                        <img class="h-auto w-64 hidden md:block" src="{{ asset('images/jimwell.png') }}" alt="Jimwell Ibay">
                     </div>
                 </div>
             </div>
@@ -80,7 +81,7 @@
                         </a>
                     </div>
                     <div>
-                        <img class="h-auto w-64" src="{{ asset('images/cv.jpg') }}" alt="Jimwell Ibay CV">
+                        <img class="h-auto w-64 hidden md:block" src="{{ asset('images/cv.jpg') }}" alt="Jimwell Ibay CV">
                     </div>
                 </div>
             </div>
@@ -89,36 +90,38 @@
 
   </header>
 
-  <div class="h-10"></div>
+  <div class="h-4"></div>
 
   <main>
-    <nav class="bg-white border border-gray-200 rounded-lg shadow-sm mx-10 py-2">
-      <div class="flex flex-row mx-5 gap-4">
-        <a href="/" class="text-sm font-bold px-4 py-2 rounded-lg {{ request()->is('/') ? 'bg-blue-700 text-gray-50 ' : 'text-gray-900' }}">
-            Projects
-        </a>
-        <a href="/experience" class="text-sm font-bold px-4 py-2 rounded-lg {{ request()->is('experience') ? 'bg-blue-700 text-gray-50 ' : 'text-gray-900' }}">
-            Experience
-        </a>
-        <a href="/skills" class="text-sm font-bold px-4 py-2 rounded-lg {{ request()->is('skills') ? 'bg-blue-700 text-gray-50 ' : 'text-gray-900' }}">
-            Skills
-        </a>
-        <a href="/certificates" class="text-sm font-bold px-4 py-2 rounded-lg {{ request()->is('certificates') ? 'bg-blue-700 text-gray-50 ' : 'text-gray-900' }}">
-            Certificates
-        </a>
-      </div>
-    </nav>
-    <div class="bg-white border border-gray-200 rounded-lg shadow-sm mx-10 mt-1 py-80">
-        {{ $slot }}
+    <div class="flex flex-col gap-1 mx-5">
+        <nav class="bg-white border border-gray-200 rounded-lg shadow-sm py-2" id="navigation">
+        <div class="flex flex-row mx-5 gap-3 md:gap-4">
+            <a href="{{ route('index', [], false) }}#navigation" class="text-sm font-bold px-4 py-2 rounded-lg {{ request()->is('/') ? 'bg-blue-700 text-gray-50 ' : 'text-gray-900' }}">
+                Projects
+            </a>
+            <a href="{{ route('experience', [], false) }}#navigation" class="text-sm font-bold px-4 py-2 rounded-lg {{ request()->is('experience') ? 'bg-blue-700 text-gray-50 ' : 'text-gray-900' }}">
+                Experience
+            </a>
+            <a href="{{ route('skills', [], false) }}#navigation" class="text-sm font-bold px-4 py-2 rounded-lg {{ request()->is('skills') ? 'bg-blue-700 text-gray-50 ' : 'text-gray-900' }}">
+                Skills
+            </a>
+            <a href="{{ route('certificates', [], false) }}#navigation" class="text-sm font-bold px-4 py-2 rounded-lg {{ request()->is('certificates') ? 'bg-blue-700 text-gray-50 ' : 'text-gray-900' }}">
+                Certificates
+            </a>
+        </div>
+        </nav>
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+            {{ $slot }}
+        </div>
     </div>
+    
   </main>
 
   <div class="h-10"></div>
 
   <footer>
-    <p class="text-sm text-gray-900 w-full text-center">&copy; 2025, ibayjimwell All Rights Reserved.</p>
+    <p class="text-sm text-gray-900 w-full text-center">&copy; 2025 <a href="" class="font-semibold">ibayjimwell</a>, All Rights Reserved.</p>
   </footer>
-
-  <script src="/javascripts/script.js"></script>
+  
 </body>
 </html>
