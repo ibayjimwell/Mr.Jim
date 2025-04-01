@@ -16,18 +16,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $projects = Projects::all();
-
+    
     return view('index', ['projects' => $projects]);
 })->name('index');
 
+
 Route::get('/experience', function () {
+
     return view('experience');
 })->name('experience');
 
 Route::get('/skills', function () {
+
     return view('skills');
 })->name('skills');
 
 Route::get('/certificates', function () {
+
     return view('certificates');
 })->name('certificates');

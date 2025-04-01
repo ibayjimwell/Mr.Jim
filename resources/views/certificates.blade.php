@@ -2,5 +2,7 @@
     <x-slot:title>
         ibayjimwell | Certificates
     </x-slot:title>
-    <h1>Certificates</h1>
+
+    <h1>Comming soon</h1>
+
 </x-layout>
