@@ -9,7 +9,7 @@
                 <div class="max-w-sm bg-white hover:bg-gray-50 border border-gray-200 rounded-lg shadow-lg cursor-pointer">
                     <div class="flex flex-row gap-2">
                         <div>
-                            <img class="rounded-s-md h-full w-80" src="{{ asset($project->project_image_path) }}" alt="" />
+                            <img class="rounded-s-md h-full w-80" src="{{ asset($project->project_image_path) }}" alt="{{ $project->project_name }} image" />
                         </div>
                         <div class="p-5">
                             <div href="#">

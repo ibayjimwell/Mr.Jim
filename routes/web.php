@@ -20,6 +20,11 @@ Route::get('/', function () {
     return view('index', ['projects' => $projects]);
 })->name('index');
 
+Route::get('/project/list', function () {
+    $projects = Projects::all();
+    
+    return view('project-list', ['projects' => $projects]);
+})->name('project-list');
 
 Route::get('/experience', function () {
 

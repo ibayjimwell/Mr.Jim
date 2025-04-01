@@ -1,5 +1,3 @@
-@props(['isNoCard'])
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
